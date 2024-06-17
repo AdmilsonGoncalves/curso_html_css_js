@@ -26,7 +26,7 @@ p {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1820px;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -55,7 +55,6 @@ p {
     outline: 15px solid #4f9bf900;
   }
 }
-
 
 header {
   background-position: center;
@@ -120,29 +119,130 @@ nav ul a:hover::after {
   margin: 18px 0;
 }
 
-.faca-mais .container, .website-facil .container{
+.faca-mais .container, .website-facil .container, .seguranca .container {
   display: flex;
   align-items: center;
 }
 
-.faca-mais .faca-mais-text, .website-facil .website-facil-text {
+.faca-mais .faca-mais-text, .website-facil .website-facil-text, .seguranca .seguranca-text {
   width: 50%;
   padding: 0 40px;
 }
 
-.faca-mais .faca-mais-text h3, .website-facil .website-facil-text h3{
-font-size: 56px;
+.faca-mais .faca-mais-text h3, .website-facil .website-facil-text h3, .seguranca .seguranca-text h3 {
+  font-size: 56px;
 }
 
-.faca-mais .faca-mais-text p, .website-facil .website-facil-text p{
-margin: 5px 0 10px 0;
+.faca-mais .faca-mais-text p, .website-facil .website-facil-text p, .seguranca .seguranca-text p {
+  margin: 5px 0 10px 0;
 }
 
-.faca-mais .faca-mais-img, .website-facil .website-facil-img {
+.faca-mais .faca-mais-img, .website-facil .website-facil-img, .seguranca .seguranca-img {
   width: 50%;
 }
 
-.faca-mais .faca-mais-img img, .website-facil .website-facil-img img{
+.faca-mais .faca-mais-img img, .website-facil .website-facil-img img, .seguranca .seguranca-img img {
   width: 100%;
+}
+
+.depoimentos .container h3 {
+  text-align: center;
+}
+
+.depoimentos .container p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.depoimentos .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.depoimentos .cards .card-item {
+  background-color: #d3e6fd;
+  margin: 15px;
+  border-radius: 14px;
+  text-align: center;
+  width: 350px;
+  height: 25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+
+.depoimentos .cards .card-item img {
+  border-radius: 100%;
+  width: 80px;
+  display: block;
+  margin: 20px auto;
+}
+
+.depoimentos .cards .card-item .nome-usuario {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.depoimentos .cards .card-item .depoimento-usuario {
+  font-size: 15px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.depoimentos .cards .card-item .estrelas {
+  margin: 15px 0;
+  border-top: 2px solid #71767a23;
+  padding: 10px 0 0 0;
+}
+
+.depoimentos .cards .card-item .estrelas i {
+  color: #4f9cf9;
+  font-size: 15px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.depoimentos .cards .card-item:hover {
+  background-color: #4f9cf9;
+  margin-top: -5px;
+}
+
+.depoimentos .cards .card-item:hover .nome-usuario,
+.depoimentos .cards .card-item:hover .depoimento-usuario,
+.depoimentos .cards .card-item:hover .estrelas i {
+  color: white;
+}
+
+
+.nossos-clientes .container h3, p {
+  text-align: center;
+}
+
+.nossos-clientes .container div {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+
+}
+
+
+footer {
+  background-color: #4f9cf9;
+  text-align: center;
+}
+
+footer i {
+  color: #4f9cf9;
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+}
+
+footer p {
+  margin-top: 10px;
+  color: white;
 }
 
