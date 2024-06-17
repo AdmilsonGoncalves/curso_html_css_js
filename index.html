@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <title>Curso HTML, CSS e JavaScript</title>
 
+
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
@@ -32,18 +33,24 @@
       <a href="./index.html">
         <img src="./img/logo.png" alt="Logo">
       </a>
-      <ul class="ul">
+      <ul class="main-menu">
         <a href="./index.html">Home</a>
         <a href="./sobre.html">Sobre</a>
         <a href="./servicos.html">Serviços</a>
-        <a href="./contato.html">Contato</a>
+        <a class="btn" href="./contato.html">Contato</a>
+        <div class="close-icon" onclick="closeMenu()">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
       </ul>
+      <div class="menu-icon" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </nav>
     <section class="banner">
       <div class="banner-text">
         <h1>Whitespace</h1>
         <p>Construa a sua marca, conquiste o mundo sem habilidade de códigos ou design necessárias</p>
-        <a href="./contato.html" class="btn">Entrar em contato</a>
+        <a href="./contato.html" class="btn animated-btn">Entrar em contato</a>
       </div>
     </section>
   </div>
@@ -55,7 +62,7 @@
     <div class="faca-mais-text">
       <h3>Faça mais com a Whitespace.</h3>
       <p>Criação de websites, loja virtual e blogs para sua empresa nunca foi tão fácil.</p>
-      <a href="./contato.html" class="btn">Entrar em contato</a>
+      <a href="./contato.html" class="btn animated-btn">Entrar em contato</a>
     </div>
 
     <div class="faca-mais-img">
@@ -74,7 +81,7 @@
       <h3>Ter um website nunca foi tão fácil.</h3>
       <p>Agora com a nossa empresa, ter um website é algo simplesmente fácil. Basta entrar em contato e nós vamos
         desenvolver o seu portal em tempo record, para você começar a conquistar o mundo.</p>
-      <a href="./contato.html" class="btn">Entrar em contato</a>
+      <a href="./contato.html" class="btn animated-btn">Entrar em contato</a>
     </div>
   </div>
 </section>
@@ -143,14 +150,13 @@
   </div>
 </section>
 
-
 <section class="seguranca">
   <div class="container">
 
     <div class="seguranca-text">
       <h3>Tenha um site seguro!</h3>
       <p>Nós trabalhamos com tecnologias atualizadas, rápidas e seguras, conforme padrão de mercado.</p>
-      <a href="./contato.html" class="btn">Entrar em contato</a>
+      <a href="./contato.html" class="btn animated-btn">Entrar em contato</a>
     </div>
 
     <div class="seguranca-img">
@@ -171,6 +177,7 @@
 
 </footer>
 
+<script src="./js/main.js"></script>
 </body>
 
 </html>

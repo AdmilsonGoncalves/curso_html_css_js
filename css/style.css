@@ -38,7 +38,10 @@ p {
   border-radius: 10px;
   cursor: pointer;
   display: inline-block;
-  transition: 0.1s;
+  transition: 0.3s;
+}
+
+.btn.animated-btn {
   animation: animated-outline 1s ease-out infinite;
 }
 
@@ -96,6 +99,10 @@ nav ul a:hover::after {
   width: 100%;
 }
 
+.menu-icon, .close-icon {
+  display: none;
+}
+
 .banner {
   display: flex;
   justify-content: center;
@@ -115,7 +122,7 @@ nav ul a:hover::after {
 .banner .banner-text p {
   font-size: 20px;
   color: #ffffffb7;
-  font-weight: lighter;
+  font-weight: bold;
   margin: 18px 0;
 }
 
@@ -214,7 +221,6 @@ nav ul a:hover::after {
   color: white;
 }
 
-
 .nossos-clientes .container h3, p {
   text-align: center;
 }
@@ -223,9 +229,7 @@ nav ul a:hover::after {
   display: flex;
   align-content: center;
   justify-content: space-around;
-
 }
-
 
 footer {
   background-color: #4f9cf9;
@@ -246,3 +250,47 @@ footer p {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 100;
+    background-color: #184b88;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    clip-path: circle(0.0% at 100% 0);
+  }
+
+  .main-menu.open {
+    clip-path: circle(141.4% at 100% 0);
+  }
+
+  .main-menu a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+  }
+
+  .close-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 46px;
+    right: 28px;
+  }
+
+}
