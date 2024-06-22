@@ -141,7 +141,7 @@ nav ul a:hover::after {
   font-size: 56px;
 }
 
-.faca-mais .faca-mais-text p, .website-facil .website-facil-text p, .seguranca .seguranca-text p, .sobre .sobre-text p{
+.faca-mais .faca-mais-text p, .website-facil .website-facil-text p, .seguranca .seguranca-text p, .sobre .sobre-text p {
   margin: 5px 0 10px 0;
   text-align: start;
 }
@@ -252,7 +252,7 @@ footer p {
   color: white;
 }
 
-.servicos h3  {
+.servicos h3 {
   text-align: center;
 }
 
@@ -263,7 +263,7 @@ footer p {
 .servicos .row-cards {
   display: flex;
   justify-content: center;
-  margin-top: 20px ;
+  margin-top: 20px;
   flex-flow: row wrap;
   gap: 10px;
 }
@@ -281,11 +281,11 @@ footer p {
   background-color: #4f9cf9;
 }
 
-.servicos .row-cards-item:hover p{
+.servicos .row-cards-item:hover p {
   color: white;
 }
 
-.servicos .row-cards-item img{
+.servicos .row-cards-item img {
   background-color: #4f9cf9;
   border-radius: 20px;
   width: 70px;
@@ -300,6 +300,38 @@ footer p {
 .servicos .row-cards-item p.descricao-servico {
   transition: 0.3s;
 }
+
+.dados {
+  background-color: #d3e6fd;
+}
+
+.dados .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dados .dados-item {
+  text-align: center;
+  margin: 15px;
+  color: #000000be;
+}
+
+.dados .dados-item img {
+  background-color: #4f9cf9;
+  border-radius: 14px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 80px;
+}
+
+.dados .dados-item p {
+  font-size: 18px;
+}
+.dados .dados-item p strong{
+  font-size: 28px;
+}
+
 
 @media screen and (max-width: 768px) {
   .main-menu {
