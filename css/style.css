@@ -165,6 +165,7 @@ nav ul a:hover::after {
 .depoimentos .cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .depoimentos .cards .card-item {
@@ -230,6 +231,7 @@ nav ul a:hover::after {
   display: flex;
   align-content: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 footer {
@@ -385,11 +387,11 @@ footer p {
   border-color: #4f9cf9;
 }
 
-.contato .contato-info .right-side .btn{
+.contato .contato-info .right-side .btn {
   border: none;
 }
 
-.contato .contato-info .right-side textarea{
+.contato .contato-info .right-side textarea {
   border: 1px solid #afafaf;
   color: #212121;
   border-radius: 9px;
@@ -400,8 +402,6 @@ footer p {
   font-weight: lighter;
   resize: none;
 }
-
-
 
 @media screen and (max-width: 768px) {
   .main-menu {
@@ -444,6 +444,57 @@ footer p {
     position: absolute;
     top: 46px;
     right: 28px;
+  }
+
+
+  .banner .banner-text {
+    padding: 0;
+    margin: 80px;
+  }
+
+  .banner .banner-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .banner .banner-text p {
+    font-size: 15px;
+  }
+
+  .faca-mais .container,  .seguranca .container, .sobre .container {
+    flex-direction: column-reverse;
+  }
+
+  .website-facil .container {
+    flex-direction: column;
+  }
+
+  .faca-mais .container h3, .website-facil .container h3, .seguranca .container h3, .sobre .container h3{
+    font-size: 48px;
+  }
+
+  .faca-mais .faca-mais-text, .website-facil .website-facil-text, .seguranca .seguranca-text, .sobre .sobre-text,
+  .faca-mais .faca-mais-img, .website-facil .website-facil-img, .seguranca .seguranca-img, .sobre .sobre-img {
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+  }
+
+  .depoimentos .cards .card-item {
+    width: 100%;
+  }
+
+  .sobre .container {
+    flex-direction: column-reverse;
+  }
+
+  .contato .contato-info {
+   flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .contato .contato-info .left-side,
+  .contato .contato-info .right-side{
+    width: 100%;
+    margin: 10px 0 10px 0;
   }
 
 }
